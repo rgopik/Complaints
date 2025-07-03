@@ -1,0 +1,24 @@
+{
+  "name": "text-analysis-backend",
+  "version": "1.0.0",
+  "description": "Backend API for text sentiment and emotion analysis",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "text-analysis",
+    "sentiment",
+    "nlp",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.1",
+    "express": "^4.18.2"
+  }
+}
