@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Complaints Analyzer",
+    "slug": "complaints-analyzer",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "description": "A mobile app for analyzing complaint text with sentiment analysis, threat detection, and feedback submission.",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#2196F3"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.complaints.analyzer"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#2196F3"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.complaints.analyzer"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
