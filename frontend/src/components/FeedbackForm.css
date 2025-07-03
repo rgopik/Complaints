@@ -1,0 +1,307 @@
+.feedback-form {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border: 2px solid #e3f2fd;
+  margin-top: 2rem;
+}
+
+.feedback-form.submitted {
+  background: #f1f8e9;
+  border-color: #4CAF50;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.feedback-header {
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 1rem;
+}
+
+.feedback-header h3 {
+  margin: 0 0 0.5rem 0;
+  color: #1976D2;
+  font-size: 1.5rem;
+}
+
+.feedback-header p {
+  margin: 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+.success-message h3 {
+  color: #4CAF50;
+  margin: 0 0 1rem 0;
+  font-size: 1.75rem;
+}
+
+.success-message p {
+  color: #2E7D32;
+  font-size: 1.1rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.form-section {
+  margin-bottom: 2rem;
+}
+
+.section-label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+/* Rating Section */
+.rating-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.star {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #ddd;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0.25rem;
+  border-radius: 4px;
+}
+
+.star:hover,
+.star:focus {
+  color: #ffc107;
+  transform: scale(1.1);
+}
+
+.star.filled {
+  color: #ffc107;
+}
+
+.star:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.rating-label {
+  margin-left: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Form inputs */
+textarea,
+input[type="email"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+textarea:focus,
+input[type="email"]:focus {
+  border-color: #2196F3;
+  outline: none;
+}
+
+textarea.error,
+input[type="email"].error {
+  border-color: #f44336;
+}
+
+textarea:disabled,
+input[type="email"]:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+.help-text {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+.error-message {
+  background-color: #ffebee;
+  border: 1px solid #f44336;
+  color: #c62828;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.general-error {
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+/* Button group */
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #f0f0f0;
+}
+
+.submit-button {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  min-width: 160px;
+  justify-content: center;
+}
+
+.submit-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+.submit-button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.cancel-button {
+  background: transparent;
+  color: #666;
+  border: 2px solid #ddd;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cancel-button:hover:not(:disabled) {
+  border-color: #bbb;
+  color: #333;
+}
+
+.cancel-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Loading spinner for submit button */
+.submit-button .spinner {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 0.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .feedback-form {
+    padding: 1.5rem;
+  }
+  
+  .feedback-form.submitted {
+    padding: 2rem 1.5rem;
+  }
+  
+  .rating-container {
+    justify-content: center;
+  }
+  
+  .rating-label {
+    margin-left: 0;
+    margin-top: 0.5rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .button-group {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+  
+  .submit-button,
+  .cancel-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .star,
+  .submit-button,
+  .cancel-button,
+  textarea,
+  input[type="email"] {
+    transition: none;
+  }
+  
+  .star:hover,
+  .submit-button:hover:not(:disabled) {
+    transform: none;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .feedback-form {
+    border-color: #000;
+  }
+  
+  textarea,
+  input[type="email"] {
+    border-color: #000;
+  }
+  
+  textarea:focus,
+  input[type="email"]:focus {
+    border-color: #000;
+    box-shadow: 0 0 0 2px #000;
+  }
+  
+  .submit-button {
+    background: #000;
+    border: 2px solid #000;
+  }
+  
+  .cancel-button {
+    border-color: #000;
+    color: #000;
+  }
+  
+  .star.filled {
+    color: #000;
+  }
+}
